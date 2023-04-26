@@ -656,3 +656,90 @@ color: grey;
     margin-bottom: 20px;
     margin-right: 20px;
   }
+
+  /* MAIN WRAP 2 */
+  .main_wrap2{
+    padding-top: 20px;
+  }
+  .main_wrap2 .dropdown{
+    display: inline-block;
+    margin-left: 20px;
+    max-width: 200px;
+    width: 100%;
+  }
+
+  /* CHECKBOX CSS */
+  .form-group {
+    display: block;
+    margin-bottom: 9px;
+  }
+  
+  .form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .form-group label {
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .form-group label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #0079bf;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 7px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .form-group input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 4.5px;
+    height: 9px;
+    border: solid #0079bf;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  .chexbox_sec{
+    display: flex;
+    column-gap: 70px;
+  }
+  .main_wrap2 .btn{
+    background-color: transparent;
+    color: black;
+    max-width: 150px;
+    width: 100%;
+
+  }
+  .main_wrap2 p{
+    font-size: 14px;
+  }
+  .main_wrap2 .left span{
+    font-size: 14px;
+  }
+  .main_wrap2 .right span{
+    font-size: 14px;
+  }
+  .bottom_check{
+    padding-top: 20px;
+  }
+  .bottom_check span{
+    display: inline-block;
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
