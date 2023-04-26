@@ -743,3 +743,83 @@ color: grey;
     font-size: 14px;
     padding-bottom: 10px;
   }
+
+
+
+  .main_wrap3 .chexbox_sec{
+    padding-top: 20px;
+  }
+  .child_check{
+    padding-left: 25px;
+  }
+  .child_check  .form-group:nth-child(5){
+    padding-left: 25px;
+  }
+
+
+
+  .main_wrap4 .last_scrol{
+    max-width: 62px;
+    width: 100%;
+  }
+  .main_wrap4 .check4{
+    padding-top: 20px;
+  }
+  .chexbox_sec1 .left{
+    padding-bottom: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  }
+  .chexbox_sec1 .bottom_check{
+    background-color: #a7a7a736;
+    padding: 10px 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  }
+  .chexbox_sec1 .child_check{
+    background-color: #fff;
+    padding: 10px;
+  }
+
+
+
+  .main_wrap5 .check5{
+    height: 70vh;
+    position: relative;
+  }
+
+   .main_wrap5 .text_body p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+   }
+
+   .check6 span{
+    font-size: 14px;
+    display: block;
+   }
+
+   .top_btn_drop{
+    display: flex;
+    column-gap: 300px;
+   }
+   .dropdown a{
+    border: 1px solid #a2a4a9;
+    padding: 3px 22px;
+    color: #000000;
+    font-size: 14px;
+   }
+   .top_btn_drop .dropdown{
+    display: flex;
+    flex-direction: column;
+   }
+   .check6 .left a{
+    border: 1px solid #a2a4a9;
+    padding: 5px 22px;
+    color: #000000;
+    font-size: 14px;
+   }
+   .check6 .right .img_wrap{
+    padding-top: 20px;
+   }

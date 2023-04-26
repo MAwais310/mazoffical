@@ -117,28 +117,29 @@
                         </li>
                       </ul>
                      <div class="body_wrap">
-                        <div class="top_btn_sec">
-                            <div>
-                                <label for="files" class="btn">ADD FILES</label>
-                                <input id="files" style="display: none;" type="file">
-                            </div>
-                            <div>
-                                <label for="actual-btn"  class="btn">ADD Folder</label>
-                                <input type="file" id="actual-btn" style="display: none;" webkitdirectory="" directory="" name="app_cvupload" class="fullwidth input rqd">
-                            </div>
-                            <div class="dropdown">
-                              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                CONNECT TO
-                              </button>
-                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                              </div>
-                            </div>
-                        </div>
+                        
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                              <div class="top_btn_sec">
+                                <div>
+                                    <label for="files" class="btn">ADD FILES</label>
+                                    <input id="files" style="display: none;" type="file">
+                                </div>
+                                <div>
+                                    <label for="actual-btn"  class="btn">ADD Folder</label>
+                                    <input type="file" id="actual-btn" style="display: none;" webkitdirectory="" directory="" name="app_cvupload" class="fullwidth input rqd">
+                                </div>
+                                <div class="dropdown">
+                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    CONNECT TO
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                  </div>
+                                </div>
+                            </div>
                                 <div class="border_main drop-zone">
                                     <span class="drop-zone__prompt">Drop file here or click to upload</span>
                                     
@@ -266,15 +267,241 @@
                                         <label for="not">Disallow autofixes</label>
                                       </div>
                                     </div>
+                                    <div class="bottom_btn text-right">
+                                      <a href="javascript:void()">CHECK</a>
+                                  </div>
                                 </div>
-
-
                             </div>
-                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-                        </div>
-                     </div>
+                            <div class="tab-pane fade" id="spell" role="tabpanel" aria-labelledby="spell">
+                              <div class="main_wrap3">
+                                <div class="chexbox_sec">
+                                    <div class="left">
+                                      <form>
+                                        <div class="form-group">
+                                          <input type="checkbox" id="not">
+                                          <label for="not">check grammar</label>
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="checkbox" id="draft">
+                                          <label for="draft">check spelling</label>
+                                        </div>
+                                        <div class="child_check">
+                                          <div class="form-group">
+                                            <input type="checkbox" id="Translated">
+                                            <label for="Translated">suggest replacements</label>
+                                          </div>
+                                          <div class="form-group">
+                                            <input type="checkbox" id="trans_rej">
+                                            <label for="trans_rej">ignore words in UPPER CASE</label>
+                                          </div>
+                                          <div class="form-group">
+                                            <input type="checkbox" id="Translation_approv">
+                                            <label for="Translation_approv">only if the same word is found in source</label>
+                                          </div>
+                                          <div class="form-group">
+                                            <input type="checkbox" id="sign_off">
+                                            <label for="sign_off">Ignore words in MiXeD case</label>
+                                          </div>
+                                          <div class="form-group">
+                                            <input type="checkbox" id="sign_off2">
+                                            <label for="sign_off2">Ignore words from the list of untranslatables</label>
+                                          </div>
+                                          <div class="form-group">
+                                            <input type="checkbox" id="sign_off2">
+                                            <label for="sign_off2">Ignore target words found in source</label>
+                                          </div>
+                                          <div class="form-group">
+                                            <input type="checkbox" id="sign_off2">
+                                            <label for="sign_off2">Do not check one-letter words</label>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                </div>
+                                <div class="bottom_btn text-right">
+                                  <a href="javascript:void()">CHECK</a>
+                              </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="undefined" role="tabpanel" aria-labelledby="undefined">
+                              <div class="main_wrap4">
+                                <div class="top_btn_sec">
+                                  <div>
+                                      <label for="files" class="btn">ADD NEW CHECK</label>
+                                      <input id="files" style="display: none;" type="file">
+                                  </div>
+                                  <div>
+                                      <label for="actual-btn"  class="btn">CHECK ALL</label>
+                                      <input type="file" id="actual-btn" style="display: none;" webkitdirectory="" directory="" name="app_cvupload" class="fullwidth input rqd">
+                                  </div>
+                                  <div class="last_scrol">
+                                    <img src="./assets/images/Screenshot (14).png" alt="">
+                                  </div>
+                              </div>
+                                <div class="chexbox_sec1 check4">
+                                    <div class="left">
+                                      <form>
+                                        <div class="form-group">
+                                          <input type="checkbox" id="not">
+                                          <label for="not">Different amount of register mark character</label>
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="checkbox" id="draft">
+                                          <label for="draft">Different amount of trade mark character</label>
+                                        </div>
+                                          <div class="form-group">
+                                            <input type="checkbox" id="Translated">
+                                            <label for="Translated">Invalid short date format</label>
+                                          </div>
+                                          <div class="form-group">
+                                            <input type="checkbox" id="trans_rej">
+                                            <label for="trans_rej">Missing copyright character</label>
+                                          </div>
+                                        </div>
+                                        <div class="bottom_check">
+                                          <div class="form-group">
+                                            <input type="checkbox" id="Translation_approv">
+                                            <label for="Translation_approv">Chinese specific</label>
+                                          </div>
+                                          <div class="child_check">
+                                            <div class="form-group">
+                                              <input type="checkbox" id="sign_off">
+                                              <label for="sign_off">Invalid spaces around brackets</label>
+                                            </div>
+                                            <div class="form-group">
+                                              <input type="checkbox" id="sign_off2">
+                                              <label for="sign_off2">Invalid target brackets</label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    
+                                </div>
+                                <div class="bottom_btn text-right">
+                                  <a href="javascript:void()">CHECK</a>
+                              </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="user" role="tabpanel" aria-labelledby="user">
+                              <div class="main_wrap5">
+                                <div class="top_btn_sec">
+                                  <div>
+                                      <label for="files" class="btn">ADD NEW IGNORE RULE</label>
+                                      <input id="files" style="display: none;" type="file">
+                                  </div>
+                                  <div>
+                                      <label for="actual-btn"  class="btn">CHECK ALL</label>
+                                      <input type="file" id="actual-btn" style="display: none;" webkitdirectory="" directory="" name="app_cvupload" class="fullwidth input rqd">
+                                  </div>
+                                  <div class="last_scrol">
+                                    <img src="./assets/images/Screenshot (14).png" alt="">
+                                  </div>
+                              </div>
+                                <div class="chexbox_sec1 check5">
+                                  <div class="text_body">
+                                    <p>Click the ADD NEW IGNORE RULE button to create anew User-defined ignore</p>
+                                  </div>
+                                    
+                                </div>
+                                <div class="bottom_btn text-right">
+                                  <a href="javascript:void()">CHECK</a>
+                              </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="term" role="tabpanel" aria-labelledby="term">
+                              <div class="main_wrap5">
 
-                </div>
+                                <div class="chexbox_sec check6">
+                                  <div class="left">
+                                    <span>Settings</span>
+                                    <form>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="not">
+                                        <label for="not">Check terminology</label>
+                                      </div>
+                                     <div class="child_check">
+                                      <div class="form-group">
+                                        <input type="checkbox" id="draft">
+                                        <label for="draft"> Check if number of terms in target is not less than in source </label>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="Translated">
+                                        <label for="Translated"> Skip terminology from the list of untranslatables </label>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="trans_rej">
+                                        <label for="trans_rej"> Check if source and target terms are within the same tags </label>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="Translation_approv">
+                                        <label for="Translation_approv"> Enable reverse terminology check </label>
+                                      </div>
+                                     </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="sign_off">
+                                        <label for="sign_off">Detect forbidden terms</label>
+                                      </div>
+                                    </form>
+                                    <span>
+                                      Glossaries
+                                    </span>
+                                    <div class="dropdown">
+                                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        ADD
+                                      </button>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                      </div>
+                                      <a href="#">Export</a>
+                                    </div>
+                                    <span class="mt-3">Word forms base</span>
+                                    <a href="#">Default</a>
+                                  </div>
+                                  <div class="right">
+                                    <div class="top_btn_drop">
+                                        <div class="dropdown">
+                                          <span>
+                                            Source Language
+                                            </span>
+                                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Select a language..
+                                          </button>
+                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                          </div>
+                                        </div>   
+                                        <div class="dropdown">
+                                          <span>
+                                            Target Language
+                                            </span>
+                                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Select a language..
+                                          </button>
+                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="img_wrap">
+                                      <img src="./assets/images/Screenshot (16).png" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="bottom_btn text-right">
+                                  <a href="javascript:void()">CHECK</a>
+                              </div>
+                              </div>
+                            </div>
+
+                        </div>
+                      </div>
+        </div>
             </div>
         </div>
     </section>
