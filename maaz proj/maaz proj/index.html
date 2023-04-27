@@ -592,13 +592,13 @@
                                 <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Omissions</button>
                                 <button class="tablinks" onclick="openCity(event, 'Paris')"> Untranslatables </button>
                                 <button class="tablinks" onclick="openCity(event, 'Tokyo')">Forbidden words</button>
-                                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Letter Case</button>
-                                <button class="tablinks" onclick="openCity(event, 'Tokyo')"> Punctuation and spacing </button>
+                                <button class="tablinks" onclick="openCity(event, 'LETTER')">Letter Case</button>
+                                <button class="tablinks" onclick="openCity(event, 'Punctuation')"> Punctuation and spacing </button>
                                 <button class="tablinks" onclick="openCity(event, 'Paris')"> Quotes and apostrophes </button>
                                 <button class="tablinks" onclick="openCity(event, 'Paris')"> Measurement </button>
-                                <button class="tablinks" onclick="openCity(event, 'Paris')"> Tags </button>
-                                <button class="tablinks" onclick="openCity(event, 'Paris')">  Numbers and ranges  </button>
-                                <button class="tablinks" onclick="openCity(event, 'Paris')">  Miscellaneous  </button>
+                                <button class="tablinks" onclick="openCity(event, 'Tags')"> Tags </button>
+                                <button class="tablinks" onclick="openCity(event, 'ranges')">  Numbers and ranges  </button>
+                                <button class="tablinks" onclick="openCity(event, 'Miscellaneous')">  Miscellaneous  </button>
                               </div>
                               
                               <div id="London" class="tabcontent">
@@ -644,42 +644,427 @@
                               </div>
                               </div>
                               
-                              <div id="Paris" class="tabcontent">
-                                
-                                <div class="main_p_wrap">
-                                  <p>Unstranslatables to check</p>
-                                  <div class="search">
-                                    <span class="fa fa-search"></span>
-                                    <input placeholder="Search">
-                                  </div>
-                                  <div class="main_btn_sec">
-                                    <div class="btn_wraps">
-                                        <a href="javascript:void()" id="close">Window Server 2012 <i class="fab fa-facebook"></i></a>
+                              <div id="Paris" class="tabcontent">       
+                                <div class="main_grap">
+                                  <div class="left">
+                                    <div class="main_p_wrap">
+                                      <p>Unstranslatables to check</p>
+                                        <div class="search">
+                                          <span class="fa fa-search"></span>
+                                          <input placeholder="Search">
+                                        </div>
+                                        <div class="main_btn_sec">
+                                          <div class="btn_wraps">
+                                              <a href="javascript:void()" class="closee">Window Server 2012 <span><img src="./assets/images/Screenshot (22).png" alt=""></span></a>
+                                          </div>
+                                          <div class="btn_wraps">
+                                            <a href="javascript:void()" class="closee">Window XP <span><img src="./assets/images/Screenshot (22).png" alt=""></span></a>
+                                          </div>
+                                          <div class="btn_wraps">
+                                            <a href="javascript:void()" class="closee">Window Server 2012 R2 <span><img src="./assets/images/Screenshot (22).png" alt=""></span></a>
+                                          </div>
+                                        </div>
+                                        <div class="botom_nav" style="width: 100%;">
+                                          <input style="width: 100%; border: none !important; padding-left: 5px;" type="text" placeholder="Enter an untraslatable or paste a list...">
+                                        </div>
                                     </div>
-                                    <div class="btn_wraps">
-                                      <a href="javascript:void()" id="close">Window XP <i class="fab fa-facebook"></i></a>
+                                    <div class="bottom_tabs">
+                                      <div class="top_btn_sec">
+                                        <div>
+                                            <a href="#">IMPORT</a>
+                                        </div>
+                                        <div>
+                                          <a href="#">EXPORT</a>
+                                        </div>
+                                        <div class="dropdown">
+                                          <a href="#">CLEAR</a>
+                                        </div>
+                                    </div>
+                                    </div>
                                   </div>
-                                  <div class="btn_wraps">
-                                    <a href="javascript:void()" id="close">Window Server 2012 R2 <i class="fab fa-facebook"></i></a>
-                                </div>
-                                </div>
+    
+    
+                                    <div class="right_tab">
+                                      <form>
+                                        <div class="top_flex">
+                                          <div class="form-group">
+                                            <input type="checkbox" id="untranslatables">
+                                            <label for="untranslatables">Check untranslatables in target </label>
+                                          </div>
+                                          <div class="form-group">
+                                            <input type="checkbox" id="source">
+                                            <label for="source">Check untranslatables in source </label>
+                                          </div>
+                                        </div>
+                                        
+                                        <div class="child_check">
+                                          <div class="form-group">
+                                            <input type="checkbox" id="Different">
+                                            <label for="Different">Different number of untranslatables</label>
+                                          </div>
+                                          <div class="form-group">
+                                            <input type="checkbox" id="letters">
+                                            <label for="letters">Include combinations of letters, numbers, “-” and “_” signs</label>
+                                          </div>
+                                          <div class="form-group">
+                                            <input type="checkbox" id="mixed_case">
+                                            <label for="mixed_case">Include mixed-case Latin words</label>
+                                          </div>
+                                          <div class="form-group">
+                                            <input type="checkbox" id="upper_case">
+                                            <label for="upper_case">Include upper-case Latin words</label>
+                                          </div>
+                                          <div class="form-group">
+                                            <input type="checkbox" id="space">
+                                            <label for="space">Ignore different space types</label>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
                                 </div>
                               </div>
                               
                               <div id="Tokyo" class="tabcontent">
-                                <h3>Tokyo</h3>
-                                <p>Tokyo is the capital of Japan.</p>
+                                <div class="main_grap">
+                                  <div class="left">
+                                    <div class="main_p_wrap main_t_wrap">
+                                      <p>Forbidden words to check</p>
+                                        <div class="search">
+                                          <span class="fa fa-search"></span>
+                                          <input placeholder="Search..">
+                                        </div>
+
+                                        <div class="span_nav">
+                                          <span>Enter an expression below or import a list</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_tabs">
+                                      <div class="top_btn_sec">
+                                        <div>
+                                            <a href="#">IMPORT</a>
+                                        </div>
+                                        <div>
+                                          <a href="#">EXPORT</a>
+                                        </div>
+                                        <div class="dropdown">
+                                          <a href="#">CLEAR</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                   </div>
+    
+    
+                                    <div class="right_tab">
+                                      <form>
+                                        <div class="form-group">
+                                          <input type="checkbox" id="forbidden">
+                                          <label for="forbidden">Check forbidden words </label>
+                                        </div>
+                                        
+                                        <div class="child_check">
+                                          <div class="form-group">
+                                            <input type="checkbox" id="Don">
+                                            <label for="Don">Don’t report errors if source also contains forbidden word</label>
+                                          </div>
+
+                                        </div>
+                                      </form>
+                                    </div>
+                                </div>
+                              </div>
+
+                              <div id="LETTER" class="tabcontent">
+                                <div class="main_grap">
+                                  <div class="left">
+                                    <div class="main_p_wrap main_t_wrap">
+                                      <p>Special cases to check</p>
+                                        <div class="search">
+                                          <span class="fa fa-search"></span>
+                                          <input placeholder="Search..">
+                                        </div>
+
+                                        <div class="span_nav">
+                                          <span>Enter an expression below or import a list</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_tabs">
+                                      <div class="top_btn_sec">
+                                        <div>
+                                            <a href="#">IMPORT</a>
+                                        </div>
+                                        <div>
+                                          <a href="#">EXPORT</a>
+                                        </div>
+                                        <div class="dropdown">
+                                          <a href="#">CLEAR</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                   </div>
+    
+    
+                                    <div class="right_tab">
+                                      <form>
+                                        <div class="form-group">
+                                          <input type="checkbox" id="Initial">
+                                          <label for="Initial">Initial capitalization</label>
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="checkbox" id="upper1">
+                                          <label for="upper1">Uppercase character after lowercase </label>
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="checkbox" id="special">
+                                          <label for="special">Words with special letter case </label>
+                                        </div>
+                                        
+                                        <!-- <div class="child_check">
+                                          <div class="form-group">
+                                            <input type="checkbox" id="Don">
+                                            <label for="Don">Don’t report errors if source also contains forbidden word</label>
+                                          </div>
+
+                                        </div> -->
+                                      </form>
+                                    </div>
+                                </div>
+                              </div>
+
+                              <div id="Punctuation" class="tabcontent">
+                                <div class="main_grap">
+                                  <div class="left">
+                                    <form>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="sapc1">
+                                        <label for="sapc1">Multiple spacing</label>
+                                      </div>
+                                       <div class="child_check">
+                                        <div class="form-group">
+                                          <input type="checkbox" id="formatting">
+                                          <label for="formatting">Ignore source formatting</label>
+                                        </div>
+
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="End">
+                                        <label for="End">End punctuation</label>
+                                      </div>
+                                       <div class="child_check">
+                                        <div class="form-group">
+                                          <input type="checkbox" id="marks">
+                                          <label for="marks">Ignore quotation marks and brackets</label>
+                                        </div>
+
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="Double">
+                                        <label for="Double">Double punctuation</label>
+                                      </div>
+                                       <div class="child_check">
+                                        <div class="form-group">
+                                          <input type="checkbox" id="As">
+                                          <label for="As">As in source</label>
+                                        </div>
+
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="punc1">
+                                        <label for="punc1">Spaces around punctuation</label>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="special11">
+                                        <label for="special11">Spaces around special signs
+                                        </label>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="s1">
+                                        <label for="s1">Start and end spaces</label>
+                                      </div>
+                                       <div class="child_check">
+                                        <div class="form-group">
+                                          <input type="checkbox" id="in">
+                                          <label for="in">As in source</label>
+                                        </div>
+
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="matching">
+                                        <label for="matching">Bracket matching</label>
+                                      </div>
+                                      <div class="child_check">
+                                        <div class="form-group">
+                                          <input type="checkbox" id="more1">
+                                          <label for="more1">Ignore "more than" and "less than" signs</label>
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="checkbox" id="if1">
+                                          <label for="if1">Ignore if brackets are unmatched in source</label>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <div class="right_tab">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div id="Tags" class="tabcontent">
+                                <div class="main_grap">
+                                  <div class="left">
+                                    <form>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="tags2">
+                                        <label for="tags2">Inconsistent tags in source and target</label>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="around1">
+                                        <label for="around1">Spaces around tags</label>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="in1">
+                                        <label for="in1">Inconsistent spaces around tags in source and target</label>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="en11">
+                                        <label for="en11">Entities</label>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="o3">
+                                        <label for="o3">Tag order</label>
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <div class="right_tab">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div id="ranges" class="tabcontent">
+                                <div class="main_grap">
+                                  <div class="left">
+                                    <form>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="nue">
+                                        <label for="nue">Inconsistent numbers</label>
+                                      </div>
+                                      <div class="child_check">
+                                        <div class="form-group">
+                                          <input type="checkbox" id="to">
+                                          <label for="to">Digit to text conversion</label>
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="checkbox" id="aw11">
+                                          <label for="aw11">Skip imperial units in parentheses</label>
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="checkbox" id="Fahrenheit">
+                                          <label for="Fahrenheit">Skip Fahrenheit degrees in parentheses</label>
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="checkbox" id="Omit">
+                                          <label for="Omit">Omit start and end zeros</label>
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="form1">
+                                        <label for="form1">Number formattings</label>
+                                      </div>
+                                      <div class="child_check">
+                                        <div class="form-group">
+                                          <input type="checkbox" id="str">
+                                          <label for="str">Strict spacing</label>
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="checkbox" id="asd">
+                                          <label for="asd">Allow zeros ahead of whole numbers</label>
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="between">
+                                        <label for="between">Space between text and numbers</label>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="swq">
+                                        <label for="swq">Number sign</label>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="uyt">
+                                        <label for="uyt">Ranges</label>
+                                      </div>
+                                      <div class="child_check">
+                                        <div class="form-group">
+                                          <input type="checkbox" id="mat">
+                                          <label for="mat">Strict matches of range signs: “-”</label>
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="checkbox" id="asd">
+                                          <label for="asd">Allow zeros ahead of whole numbers</label>
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="tent">
+                                        <label for="tent">Inconsistent mathematical signs</label>
+                                      </div>
+                                      <div class="child_check">
+                                        <div class="form-group">
+                                          <input type="checkbox" id="qw21">
+                                          <label for="qw21">Strict matches of math signs: “x” and “-”</label>
+                                        </div>    
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="checkbox" id="fgh">
+                                          <label for="fgh">Inconsistent numbers order</label>
+                                        </div>
+                                    </form>
+                                  </div>
+                                  <div class="right_tab">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div id="Miscellaneous" class="tabcontent">
+                                <div class="main_grap">
+                                  <div class="left">
+                                    <form>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="un">
+                                        <label for="un">Unexpected characters</label>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="rep">
+                                        <label for="rep">Repeated words</label>
+                                      </div>
+                                      <div class="child_check">
+                                        <div class="form-group">
+                                          <input type="checkbox" id="to43">
+                                          <label for="to43">Ignore tags</label>
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="ic">
+                                        <label for="ic">Mixed Latin and Cyrillic letters</label>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" id="ent">
+                                        <label for="ent">Inconsistent URL in source and target</label>
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <div class="right_tab">
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                          </div>   
-                          <div class="bottom_btn text-right">
-                            <a href="javascript:void()">CHECK</a>
                           </div>
+                        </div>   
+                        <div class="bottom_btn text-right">
+                          <a href="javascript:void()">CHECK</a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
     </section>

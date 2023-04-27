@@ -803,7 +803,7 @@ color: grey;
 
    .check6 span{
     font-size: 14px;
-    display: block;
+    display: inline-block;
    }
 
    .top_btn_drop{
@@ -894,8 +894,12 @@ color: grey;
     max-width: 255px;
     font-size: 14px;
   }
+  .btn_wraps span img{
+    padding-left: 10px;
+    vertical-align: bottom;
+  }
  .btn_wraps a {
-  background-color: #c9e0f7;
+  background-color: #f3f7fc;
     border-radius: 0px;
     border: 2px solid var(--main);
     padding: 5px 15px;
@@ -939,11 +943,62 @@ color: grey;
   left: auto;
   left: 10px;
 }
-
+.main_grap{
+  display: flex;
+  column-gap: 50px;
+}
 .main_p_wrap{
   max-width: 400px;
   width: 100%;
   border: 1px solid #c9e0f7;
   padding: 10px 20px;
   height: 90vh;
+  position: relative;
+}
+.bottom_tabs .top_btn_sec{
+  margin-top: 15px;
+}
+.bottom_tabs .top_btn_sec a{
+  padding: 7px 14px;
+  display: inline-block;
+  font: 15px;
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+}
+.bottom_tabs .top_btn_sec div:nth-child(1){
+  background-color: #1f63a9;
+  color: #fff !important;
+}
+.botom_nav{
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+}
+.top_flex{
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.main_grap .child_check .form-group:nth-child(5){
+  padding-left: 0px;
+}
+
+
+
+
+
+.main_t_wrap span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ebeaea;
+}
+
+#Punctuation .form-group{
+  margin-bottom: 16px;
+}
+#ranges .form-group{
+  margin-bottom: 16px;
 }

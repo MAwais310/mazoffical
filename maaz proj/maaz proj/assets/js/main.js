@@ -18,12 +18,9 @@ $('.check1').click(function() {
   });
 
 // POWER CROSS BUTTON CLOSE
-window.onload = function(){
-    document.getElementById('close').onclick = function(){
-        this.remove();
-        // return false;
-    };
-};
+	$(".closee").click(function(){
+		this.remove();
+	  });
 
 // COMMON PART JS
 function openCity(evt, cityName) {
