@@ -688,7 +688,13 @@ color: grey;
     cursor: pointer;
     font-size: 14px;
   }
-  
+  .chng  label{
+    color: #cfcfcf;
+  }
+  .chng  label:before {
+    border: 2px solid #cccdce !important;
+
+  }
   .form-group label:before {
     content:'';
     -webkit-appearance: none;
@@ -717,7 +723,7 @@ color: grey;
   }
   .chexbox_sec{
     display: flex;
-    column-gap: 70px;
+    column-gap: 150px;
   }
   .main_wrap2 .btn{
     background-color: transparent;
@@ -823,3 +829,121 @@ color: grey;
    .check6 .right .img_wrap{
     padding-top: 20px;
    }
+
+   /* MAIN WRAP 6 STYLING */
+   .main_wrap6 span img{
+    max-width: 20px;
+   }
+   .main_wrap6 .child_check .form-group:nth-child(5){
+    padding-left: 0px;
+   }
+
+
+   /* COMMON TAB CSS START */
+   .tab {
+    float: left;
+    border-right: 1px solid #ccc;
+    width: 20%;
+    /* flex: 0 0 20%; */
+    height: 100vh;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 9px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    background-color: #cdddf0;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    float: left;
+    padding: 0px 30px;
+    width: 80%;
+    flex: 0 0 80%;
+    border-left: none;
+    height: 300px;
+  }
+
+  .dash_main{
+    width: 100%;
+  }
+
+  /* TAB 2 */
+  .btn_wraps{
+    
+    margin-bottom: 5px;
+    max-width: 255px;
+    font-size: 14px;
+  }
+ .btn_wraps a {
+  background-color: #c9e0f7;
+    border-radius: 0px;
+    border: 2px solid var(--main);
+    padding: 5px 15px;
+    display: inline-block;
+}
+ .btn_wraps i {
+  color: #000;
+  padding-left: 10px;
+}
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.search {
+  display: inline-block;
+}
+
+.search input {
+  width: 250px;
+  height: 32px;
+
+  background: #fcfcfc;
+  border: 1px solid #c9e0f7;
+  border-radius: 5px;
+  /* box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset; */
+}
+
+.search input {
+  text-indent: 32px;
+}
+.search .fa-search {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.search .fa-search {
+  left: auto;
+  left: 10px;
+}
+
+.main_p_wrap{
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid #c9e0f7;
+  padding: 10px 20px;
+  height: 90vh;
+}
